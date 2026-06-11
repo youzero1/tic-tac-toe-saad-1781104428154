@@ -12,7 +12,7 @@ export default function StatusMessage({ status, currentPlayer, winner }: StatusM
     return (
       <div className="text-center">
         <span className={`text-2xl font-bold ${color}`}>Player {winner}</span>
-        <span className="text-2xl font-bold text-slate-700"> wins! 🎉</span>
+        <span className="text-2xl font-bold text-slate-800"> wins! 🎉</span>
       </div>
     );
   }
@@ -20,7 +20,7 @@ export default function StatusMessage({ status, currentPlayer, winner }: StatusM
   if (status === 'draw') {
     return (
       <div className="text-center">
-        <span className="text-2xl font-bold text-slate-600">It's a draw! 🤝</span>
+        <span className="text-2xl font-bold text-slate-700">It's a draw! 🤝</span>
       </div>
     );
   }

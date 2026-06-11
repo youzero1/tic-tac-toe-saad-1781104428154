@@ -41,9 +41,9 @@ function Cell({ value, isWinning, onClick, disabled }: CellProps) {
       disabled={disabled}
       className={clsx(
         'flex items-center justify-center rounded-2xl text-5xl font-extrabold transition-all duration-200 select-none',
-        'border-2 shadow-md',
+        'border shadow-sm',
         isWinning
-          ? 'bg-yellow-100 border-yellow-400 scale-105 shadow-yellow-200'
+          ? 'bg-yellow-50 border-yellow-300 scale-105 shadow-yellow-100'
           : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-slate-300',
         !disabled && !value && 'cursor-pointer hover:scale-105',
         disabled && !isWinning && 'cursor-default',

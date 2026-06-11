@@ -27,7 +27,7 @@ function ScoreCard({ label, value, color }: ScoreCardProps) {
 
   return (
     <div
-      className={`flex-1 flex flex-col items-center py-3 rounded-xl border-2 ${colorMap[color]}`}
+      className={`flex-1 flex flex-col items-center py-3 rounded-xl border ${colorMap[color]}`}
     >
       <span className="text-2xl font-bold">{value}</span>
       <span className="text-xs font-medium mt-1 text-center">{label}</span>
